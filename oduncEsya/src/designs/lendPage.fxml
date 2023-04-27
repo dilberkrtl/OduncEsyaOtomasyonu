@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="295.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LendController">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="29.0" layoutY="26.0" prefHeight="97.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Label text="Eşya Adı:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Eşya Türü:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Eşya Durumu:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="138.0" layoutY="26.0" prefHeight="97.0" prefWidth="149.0" spacing="10.0">
+         <children>
+            <Label fx:id="stuff_name" prefHeight="21.0" prefWidth="147.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="stuff_type" prefHeight="21.0" prefWidth="153.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="stuff_status" prefHeight="21.0" prefWidth="172.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TextField fx:id="stuff_id" layoutX="348.0" layoutY="44.0" prefHeight="31.0" prefWidth="116.0" promptText="Eşya ID Giriniz" />
+      <Label layoutX="316.0" layoutY="49.0" text="ID" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="169.0" text="ID" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="member_id" layoutX="348.0" layoutY="164.0" prefHeight="31.0" prefWidth="116.0" promptText="Üye ID Giriniz" />
+      <Separator layoutY="137.0" prefHeight="9.0" prefWidth="485.0" />
+      <Label layoutX="64.0" layoutY="169.0" text="Üye İsmi:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="member_name" layoutX="138.0" layoutY="169.0" prefHeight="21.0" prefWidth="147.0" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="139.0" layoutY="232.0" mnemonicParsing="false" onAction="#lend_clicked" prefHeight="52.0" prefWidth="199.0" style="-fx-background-color: #c08081;" text="ÖDÜNÇ VER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="52.0" fitWidth="42.0" layoutX="429.0" layoutY="242.0" onMouseClicked="#back_clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/geri.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="415.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ShowStuffController">
+   <children>
+      <Label layoutX="35.0" layoutY="45.0" text="Aranacak Eşya" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchBox" layoutX="146.0" layoutY="40.0" prefHeight="31.0" prefWidth="196.0" />
+      <Button layoutX="94.0" layoutY="316.0" mnemonicParsing="false" onAction="#update_clicked" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: #c08081;" text="Eşya Bilgilerini Güncelle" textFill="WHITE" />
+      <Button layoutX="549.0" layoutY="366.0" mnemonicParsing="false" onAction="#delete_clicked" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #c08081;" text="Eşyayı Kaldır" textFill="WHITE" />
+      <TextField fx:id="type" layoutX="136.0" layoutY="190.0" prefHeight="31.0" prefWidth="207.0" />
+      <Label layoutX="60.0" layoutY="195.0" text="Eşya Türü" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="stuff_table" layoutX="390.0" layoutY="26.0" onMouseClicked="#kullanici_table_clicked" prefHeight="327.0" prefWidth="504.0">
+         <columns>
+            <TableColumn fx:id="table_id" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="table_type" prefWidth="145.0" text="Eşya Türleri" />
+            <TableColumn fx:id="table_name" prefWidth="169.0" text="Eşya Adları" />
+            <TableColumn fx:id="table_status" prefWidth="148.0" text="Eşya Durumu" />
+         </columns>
+      </TableView>
+      <Label layoutX="67.0" layoutY="241.0" text="Eşya Adı" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="136.0" layoutY="236.0" prefHeight="31.0" prefWidth="207.0" />
+   </children>
+</AnchorPane>

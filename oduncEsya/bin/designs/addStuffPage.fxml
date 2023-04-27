@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="191.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddStuffController">
+   <children>
+      <Label layoutX="19.0" layoutY="78.0" text="Eşya Adı" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="74.0" layoutY="124.0" mnemonicParsing="false" onAction="#addStuff" prefHeight="38.0" prefWidth="253.0" style="-fx-background-color: #c08081;" text="Eşyayı Ekle" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="26.0" text="Eşya Türü" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="91.0" layoutY="73.0" prefHeight="31.0" prefWidth="264.0" />
+      <TextField fx:id="type" layoutX="91.0" layoutY="21.0" prefHeight="31.0" prefWidth="264.0" />
+   </children>
+</AnchorPane>

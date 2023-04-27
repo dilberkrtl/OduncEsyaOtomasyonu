@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="580.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <AnchorPane prefHeight="580.0" prefWidth="243.0" style="-fx-background-color: #c08081;">
+         <children>
+            <ImageView fitHeight="143.0" fitWidth="209.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../icons/logo.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="36.0" layoutY="186.0" prefHeight="269.0" prefWidth="172.0" spacing="40.0">
+               <children>
+                  <Pane prefHeight="53.0" prefWidth="172.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Uyeler.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="68.0" layoutY="5.0" mnemonicParsing="false" onAction="#uyeler_clicked" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #000000;" text="ÜYELER" textFill="#c08081">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="53.0" prefWidth="172.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/UyeEkle.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="68.0" layoutY="5.0" mnemonicParsing="false" onAction="#uyeEkle_clicked" style="-fx-background-color: #000000;" text="ÜYE EKLE" textFill="#c08081">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="53.0" prefWidth="172.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/esyalar.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="68.0" layoutY="5.0" mnemonicParsing="false" onAction="#esyalar_clicked" style="-fx-background-color: #000000;" text="EŞYALAR" textFill="#c08081">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="53.0" prefWidth="172.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/EsyaEkle.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="68.0" layoutY="5.0" mnemonicParsing="false" onAction="#esyaEkle_clicked" style="-fx-background-color: #000000;" text="EŞYA EKLE" textFill="#c08081">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="53.0" prefWidth="172.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/bilgi.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="68.0" layoutY="5.0" mnemonicParsing="false" onAction="#bilgiler_clicked" style="-fx-background-color: #000000;" text="BİLGİLER" textFill="#c08081">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <ImageView fitHeight="71.0" fitWidth="89.0" layoutX="36.0" layoutY="504.0" onMouseClicked="#exit_clicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="243.0" layoutY="463.0" prefHeight="14.0" prefWidth="346.0" style="-fx-background-color: #c08081;" />
+      <Button layoutX="259.0" layoutY="506.0" mnemonicParsing="false" onAction="#oduncVer_clicked" style="-fx-background-color: #c08081;" text="Ödünç Verme" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="442.0" layoutY="506.0" mnemonicParsing="false" onAction="#oduncBilgileri_clicked" style="-fx-background-color: #c08081;" text="Ödünç Bilgileri" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="400.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LendInfoController">
+   <children>
+      <Label layoutX="30.0" layoutY="32.0" text="ID" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchBox" layoutX="62.0" layoutY="27.0" prefHeight="31.0" prefWidth="116.0" promptText="Eşya ID Giriniz" />
+      <Label layoutX="204.0" layoutY="76.0" text="ÖDÜNÇ VERİLME BİLGİLERİ" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="324.0" layoutY="111.0" prefHeight="21.0" prefWidth="277.0" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="111.0" text="Ödünç Alma Tarihi ve Saati:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="143.0" text="EŞYA BİLGİSİ" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_RIGHT" layoutX="21.0" layoutY="174.0" prefHeight="97.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Label text="Eşya ID:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Eşya Adı:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Eşya Türü:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="141.0" layoutY="174.0" prefHeight="97.0" prefWidth="185.0" spacing="10.0">
+         <children>
+            <Label fx:id="stuff_id" prefHeight="21.0" prefWidth="191.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="stuff_name" prefHeight="21.0" prefWidth="192.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="stuff_type" prefHeight="21.0" prefWidth="191.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="457.0" layoutY="174.0" prefHeight="114.0" prefWidth="199.0" spacing="10.0">
+         <children>
+            <Label fx:id="member_id" prefHeight="21.0" prefWidth="205.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="member_name" prefHeight="21.0" prefWidth="205.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="member_phone" prefHeight="21.0" prefWidth="211.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="member_mail" prefHeight="21.0" prefWidth="207.0" textFill="#c08081">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_RIGHT" layoutX="337.0" layoutY="174.0" prefHeight="97.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Label text="Üye ID:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Üye İsmi:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Üye İletişim:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Üye Mail:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="464.0" layoutY="143.0" text="ÜYE BİLGİSİ" textFill="#c08081">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="42.0" layoutX="614.0" layoutY="337.0" onMouseClicked="#back_clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/geri.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="223.0" layoutY="327.0" mnemonicParsing="false" onAction="#lendBack_clicked" prefHeight="52.0" prefWidth="199.0" style="-fx-background-color: #c08081;" text="GERİ VERME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Separator layoutY="134.0" prefHeight="3.0" prefWidth="663.0" />
+   </children>
+</AnchorPane>
